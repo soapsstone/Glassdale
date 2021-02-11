@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glassdale PD</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+ 
+  <button id="dark-mode">Dark Mode</button>
+
+<!--Nav Bar Component -->
+<header>
+<nav>
+  <ul class="flex-container">
+    <li class="nav-item">
+      <a id="criminals-nav-link" href="#">Criminals</a>
+    </li>
+    <li class="nav-item">
+      <a id="officers-nav-link" href="#">Officers</a>
+    </li>
+    <li class="nav-item">
+      <a id="facilities-nav-link" href="#">Facilities</a>
+    </li>
+    <li class="nav-item">
+      <a id="witness-nav-link" href="#">Witnesses</a>
+    </li>
+    <li class="nav-item">
+      <a id="notes-nav-link" href="#">Notes</a>
+    </li>
+    
+      <br>
+      <select name="options button" id="filters__crime"></select>
+      <br>
+      <select name="options button" id="filter__officer"></select>
+    
+  </ul>
+</nav>
+</header>
+<br>
+<main>
+  <!-- Criminal Card -->
+<section class="container">
+    
+  <div class= "known-associates-container">
+    <!-- <div class="criminal-container"> -->
+  <div>
+      <div class="flex-container" id="criminals-card"></div>
+  </div>
+  
+  <div>       
+      <div class="flex-container" id="officer-card"></div>         
+  </div>
+
+  <div>
+      <div class="flex-container" id="location-card"></div> 
+  </div>
+
+  <div>
+      <div class="flex-container" id="witness-card"></div>
+  </div>
+  
+  <div>
+  
+  <div class="flex-container" id="notes-card"></div>
+    <div>
+      <article class="noteFormContainer flex-container"></article>
+      <article class="notelistContainer flex-container"></article>
+    </div>
+
+  </div>
+
+
+</div>
+</section>
+
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
