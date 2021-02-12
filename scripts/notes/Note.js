@@ -4,6 +4,7 @@ export const Note = (criminalNote, relatedCriminal) => {
             <p>Date: ${criminalNote.date}</p>
             <p>Entry: ${criminalNote.text}</p>
             <p>Note about: ${relatedCriminal.name}</p>
+            <button id="deleteNote--${criminalNote.id}">Delete</button>
         </div>
     `
 }

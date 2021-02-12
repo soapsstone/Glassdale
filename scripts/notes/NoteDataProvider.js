@@ -22,4 +22,10 @@ export const saveNote = note => { //
         body: JSON.stringify(note) // the thing its going to send is a jsonified note we just built
     })
 }
+
+export const deleteNote = noteId => {
+    return fetch(`http://localhost:8088/notes/${noteId}`, {
+        method: "DELETE"
+    })
+}
 //purely for data access and only that - muddy the water of the principal responsibility
