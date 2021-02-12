@@ -16,10 +16,11 @@ export const NoteForm = () => {
     <select id="noteForm--criminal" class="criminalSelect">
     <option value="">Please Select a Criminal...</option>
     ${allCriminals.map((currentCriminalInLoop) => {
-        return `<option value="${currentCriminalInLoop.id}">${currentCriminalInLoop.name}</option>
+        return `<option value="${currentCriminalInLoop.id}">
+        ${currentCriminalInLoop.name}</option>
         `
-    })
-    }</select>
+    }).join("")}
+    </select>
     `
 })
 } // buidling the form - need an input or property of the note
